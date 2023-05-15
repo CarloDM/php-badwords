@@ -16,6 +16,9 @@
   <form action="destination.php" method="post">
     <label for="paragraph">scrivi il testo</label>
     <input type="text" name="text" value='scrivi testo' >
+    <label for="censura">scrivi parola da censurare</label>
+    <input type="text" name="censored" value='ciao' >
+
     <input type="submit" value="invia">
   </form>
   </div>

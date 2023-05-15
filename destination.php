@@ -1,6 +1,7 @@
 <?php 
 $text = $_POST['text'];
-// var_dump($_POST['text']);
+$censored = $_POST['censored'];
+$text_censored = str_replace($censored,'***', $text);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@ $text = $_POST['text'];
 </head>
 <body>
   <div class="container">
-    <p><?php echo $text ?></p>
+    <p><?php echo $text_censored ?> </p>
   </div>
 </body>
 </html>
