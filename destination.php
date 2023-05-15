@@ -17,7 +17,7 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
   <title>destination</title>
 </head>
 <body>
-  <div class="container" style="font-family: monospace;">
+  <div class="container" style="font-family: monospace; text-align:justify;width:75%;margin:60px auto;">
 
     <h3>testo in entrata</h3>
     <p>
@@ -37,19 +37,20 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
       <?php echo strlen($text_shuffled)?> lettere
     </p>
 
-    <h3>parole in array</h3>
+    <h3>parole in array ciclato</h3>
     <p>
       <!-- <?php [0 => $parola] = $text_words; echo $parola ?> -->
       <?php $count = 0;
         foreach ($text_words as $key => $value) {
           $count ++;
-          [$key => $parola] = $text_words; echo $count . " " . $parola . "<br>";
+          [$key => $parola] = $text_words; 
+          echo "<li>" .  "chiave " . $key . " contatore " . $count . " " . $parola . "</li>";
         }
-        echo  '________ parole totali:' . $count;
+        echo  '________ parole totali:' . $count ;
         ?>
-        <?php echo var_dump($text_words)?>
     </p>
-
+    
+    <?php var_dump($text_words)?>
   </div>
 </body>
 </html>
