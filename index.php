@@ -1,7 +1,3 @@
-<?php 
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +11,15 @@
 
   <form action="destination.php" method="post">
       <label for="text">scrivi il testo</label><br>
-      <input type="text" name="text" value='scrivi testo' style="width:60%;padding:10px;   text-align:start;border-radius:10px;margin-bottom:10px;"><br>
+      <input  style="width:60%;padding:10px;text-align:start;border-radius:10px;margin-bottom:10px;"
+      type="text" name="text" value='scrivi testo'><br>
+
       <label for="censored">scrivi parola da censurare</label><br>
-      <input type="text" name="censored" value='ciao' style="width:40%;padding:5px;   text-align:start;border-radius:5px;margin-bottom:10px;"><br>
+      <input style="width:40%;padding:5px;text-align:start;border-radius:5px;margin-bottom:10px;"
+      type="text" name="censored" value='ciao'><br>
 
       <input type="submit" value="invia">
+
   </form>
   </div>
 </body>
