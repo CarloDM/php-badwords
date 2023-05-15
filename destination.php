@@ -2,7 +2,7 @@
 $text =                  $_POST['text'];
 $text_length =          strlen($text);
 $censored =              $_POST['censored'];
-$text_censored =        str_replace($censored,'***', $text);
+$text_censored =        str_replace($censored,'*** ', $text);
 $text_censored_length = strlen($text_censored);
 $text_shuffled =        str_shuffle($text);
 $text_words =           str_word_count($text, 1, 'àáãç3')
@@ -44,7 +44,7 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
         foreach ($text_words as $key => $value) {
           $count ++;
           [$key => $parola] = $text_words; 
-          echo "<li>" .  "chiave " . $key . " contatore " . $count . " " . $parola . "</li>";
+          echo "<li>" .  "key: " . $key . " counter: " . $count . " " . $parola . "</li>";
         }
         echo  '________ parole totali:' . $count ;
         ?>
