@@ -1,7 +1,9 @@
 <?php 
 $text = $_POST['text'];
+$text_length = strlen($text);
 $censored = $_POST['censored'];
 $text_censored = str_replace($censored,'***', $text);
+$text_censored_length = strlen($text_censored);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +15,11 @@ $text_censored = str_replace($censored,'***', $text);
 </head>
 <body>
   <div class="container">
-    <p><?php echo $text_censored ?> </p>
+    <h3>testo in entrata</h3>
+    <p><?php echo ucfirst($text) ?> <br> lungo <?php echo $text_length ?> lettere</p>
+
+    <h3>testo censurato</h3>
+    <p><?php echo ucfirst($text_censored)  ?> <br> lungo <?php echo $text_censored_length ?> lettere</p>
   </div>
 </body>
 </html>
