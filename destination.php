@@ -14,7 +14,7 @@ $text_censored_length = strlen($text_censored);
   <title>destination</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="font-family: monospace;">
     <h3>testo in entrata</h3>
     <p><?php echo ucfirst($text) ?> <br> lungo <?php echo $text_length ?> lettere</p>
 

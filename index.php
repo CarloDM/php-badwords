@@ -11,7 +11,7 @@
   <title>php-badwords</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="font-family: monospace;">
 
   <form action="destination.php" method="post">
     <label for="text">scrivi il testo</label><br>
