@@ -38,7 +38,7 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
     </p>
 
     <h3>parole in array ciclato</h3>
-    <p>
+    <ul>
       <!-- <?php [0 => $parola] = $text_words; echo $parola ?> -->
       <?php $count = 0;
         foreach ($text_words as $key => $value) {
@@ -48,7 +48,7 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
         }
         echo  '________ parole totali:' . $count ;
         ?>
-    </p>
+    </ul>
     
     <?php var_dump($text_words)?>
   </div>
