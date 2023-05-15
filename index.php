@@ -14,10 +14,10 @@
   <div class="container">
 
   <form action="destination.php" method="post">
-    <label for="paragraph">scrivi il testo</label>
-    <input type="text" name="text" value='scrivi testo'>
-    <label for="censura">scrivi parola da censurare</label>
-    <input type="text" name="censored" value='ciao'>
+    <label for="text">scrivi il testo</label><br>
+    <input type="text" name="text" value='scrivi testo' style="width:400px;  text-align:start; overflow: hidden"><br>
+    <label for="censored">scrivi parola da censurare</label><br>
+    <input type="text" name="censored" value='ciao'><br>
 
     <input type="submit" value="invia">
   </form>
