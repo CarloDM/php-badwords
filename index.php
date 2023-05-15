@@ -13,9 +13,9 @@
 <body>
   <div class="container">
 
-  <form action="destination.php">
+  <form action="destination.php" method="post">
     <label for="paragraph">scrivi il testo</label>
-    <input type="text" >
+    <input type="text" name="text" value='scrivi testo' >
     <input type="submit" value="invia">
   </form>
   </div>

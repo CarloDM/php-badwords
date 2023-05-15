@@ -1,6 +1,6 @@
 <?php 
-
-
+$text = $_POST['text'];
+// var_dump($_POST['text']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,8 @@
   <title>destination</title>
 </head>
 <body>
-  
+  <div class="container">
+    <p><?php echo $text ?></p>
+  </div>
 </body>
 </html>
