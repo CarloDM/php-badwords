@@ -19,6 +19,7 @@
     <label for="censored">scrivi parola da censurare</label><br>
     <input type="text" name="censored" value='ciao'><br>
 
+
     <input type="submit" value="invia">
   </form>
   </div>

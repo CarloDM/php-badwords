@@ -4,6 +4,8 @@ $text_length = strlen($text);
 $censored = $_POST['censored'];
 $text_censored = str_replace($censored,'***', $text);
 $text_censored_length = strlen($text_censored);
+$text_shuffled = str_shuffle($text);
+$text_words = str_word_count($text, 1, 'àáãç3')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +22,12 @@ $text_censored_length = strlen($text_censored);
 
     <h3>testo censurato</h3>
     <p><?php echo ucfirst($text_censored)  ?> <br> lungo <?php echo $text_censored_length ?> lettere</p>
+
+    <h3>testo shuffled</h3>
+    <p><?php echo ucfirst($text_shuffled)  ?> <br> lungo <?php echo strlen($text_shuffled)?> lettere</p>
+
+    <h3>parole in array</h3>
+    <?php echo var_dump($text_words) ?>
   </div>
 </body>
 </html>
