@@ -39,7 +39,15 @@ $text_words =           str_word_count($text, 1, 'àáãç3')
 
     <h3>parole in array</h3>
     <p>
-      <?php echo var_dump($text_words)?>
+      <!-- <?php [0 => $parola] = $text_words; echo $parola ?> -->
+      <?php $count = 0;
+        foreach ($text_words as $key => $value) {
+          $count ++;
+          [$key => $parola] = $text_words; echo $count . " " . $parola . "<br>";
+        }
+        echo  '________ parole totali:' . $count;
+        ?>
+        <?php echo var_dump($text_words)?>
     </p>
 
   </div>
